@@ -1,0 +1,163 @@
+.slider{
+  max-height: 600px;
+  overflow: hidden;
+  &__img{
+    width: 100%;
+  }
+}
+
+.header-wrap{
+  position: absolute;
+  width: 100%;
+  top: 25px;
+  left: 0;
+}
+
+.logo{
+  .transform-block;
+  width: 308px;
+  background-color: @bright-color;
+  color: @white-color;
+  text-transform: uppercase;
+  margin-left: 65px;
+
+  &__link{
+    display: block;
+    color: @white-color;
+    text-decoration: none;
+    padding: 30px 0 30px 40px;
+    .transform-block(26deg);
+  }
+
+  &__title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-family: @roboto-extend;
+  }
+
+  &__text{
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+
+
+}
+
+.my-wrap{
+  max-width: 900px;
+  margin: auto;
+}
+
+.navigation{
+  background-color: @grey-color;
+  .transform-block;
+  overflow: hidden;
+  ul{
+    float: right;
+  }
+
+  li{
+    float: left;
+
+    &:last-child a:after{
+      display: none;
+    }
+  }
+
+  &__link{
+    display: block;
+    color: @white-color;
+    text-decoration: none;
+    position: relative;
+    padding: 19px 40px;
+    .transaction-block(background-color);
+
+    &:after{
+      content: '';
+      width: 2px;
+      height: 100%;
+      background-color: #434343;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    &:hover{
+      background-color: @bright-color;
+    }
+
+  }
+
+  &__title{
+    .transform-block(26deg);
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: -10px;
+    font-family: @roboto-extend;
+    font-weight: bold;
+  }
+
+  &__desc{
+    .transform-block(26deg);
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #d8d8d8;
+  }
+}
+
+.main__h1{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 42px;
+  font-family: @roboto-extend;
+}
+
+.main_news{
+  width: 1000px;
+  margin: auto;
+}
+
+.main__text{
+  width: 1000px;
+  margin: auto;
+  color: #878787;
+  font-size: 14px;
+}
+
+.news{
+  height: 100px;
+  overflow: hidden;
+  border-bottom: 1px solid #eeeeee;
+  position: relative;
+
+  &__pic{
+    float: left;
+    height: 100px;
+    width: @triple-block;
+    overflow: hidden;
+    .transform-block(26deg, 1);
+    margin: 0 60px 0 -25px;
+
+    img{
+      width: 101%;
+      transform: scale(1) skewX(-26deg);
+    }
+  }
+
+  &__link{
+    display: block;
+    width: 35px;
+    height: 100%;
+    .transform-block(26deg);
+    background-color: @bright-color;
+    position: absolute;
+    top: 0;
+    right: 25px;
+  }
+
+  &__info{
+    margin-right: 115px;
+  }
+}

@@ -3,8 +3,9 @@ extends layouts/layout
 block main
     .wrap
         block content
+            include _navigation
             include main
         .hfooter
     .footer
+        include layouts/footer
 
-include layouts/footer
