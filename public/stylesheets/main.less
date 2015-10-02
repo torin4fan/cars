@@ -1,19 +1,23 @@
-.slider{
+.slider {
   max-height: 600px;
   overflow: hidden;
-  &__img{
+  &__img {
     width: 100%;
   }
 }
 
-.header-wrap{
+.header{
+  margin-bottom: 25px;
+}
+
+.header-wrap {
   position: absolute;
   width: 100%;
   top: 25px;
   left: 0;
 }
 
-.logo{
+.logo {
   .transform-block;
   width: 308px;
   background-color: @bright-color;
@@ -21,60 +25,59 @@
   text-transform: uppercase;
   margin-left: 65px;
 
-  &__link{
+  &__link {
+    .transform-block(26deg);
     display: block;
     color: @white-color;
     text-decoration: none;
     padding: 30px 0 30px 40px;
-    .transform-block(26deg);
   }
 
-  &__title{
+  &__title {
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 4px;
     font-family: @roboto-extend;
   }
 
-  &__text{
+  &__text {
     font-size: 14px;
     font-weight: 500;
     margin-left: 10px;
   }
 
-
 }
 
-.my-wrap{
+.my-wrap {
   max-width: 900px;
   margin: auto;
 }
 
-.navigation{
-  background-color: @grey-color;
+.navigation {
   .transform-block;
+  background-color: @grey-color;
   overflow: hidden;
-  ul{
+  ul {
     float: right;
   }
 
-  li{
+  li {
     float: left;
 
-    &:last-child a:after{
+    &:last-child a:after {
       display: none;
     }
   }
 
-  &__link{
+  &__link {
+    .transaction-block(background-color);
     display: block;
     color: @white-color;
     text-decoration: none;
     position: relative;
     padding: 19px 40px;
-    .transaction-block(background-color);
 
-    &:after{
+    &:after {
       content: '';
       width: 2px;
       height: 100%;
@@ -84,13 +87,13 @@
       top: 0;
     }
 
-    &:hover{
+    &:hover {
       background-color: @bright-color;
     }
 
   }
 
-  &__title{
+  &__title {
     .transform-block(26deg);
     font-size: 20px;
     text-transform: uppercase;
@@ -99,7 +102,7 @@
     font-weight: bold;
   }
 
-  &__desc{
+  &__desc {
     .transform-block(26deg);
     font-size: 11px;
     text-transform: uppercase;
@@ -107,57 +110,88 @@
   }
 }
 
-.main__h1{
-  text-transform: uppercase;
+.information{
+  width: 1000px;
+  margin: 0 auto 45px;
   text-align: center;
-  font-size: 42px;
-  font-family: @roboto-extend;
+
+  &__h1{
+    text-transform: uppercase;
+    font-size: 42px;
+    font-family: @roboto-extend;
+    margin-bottom: 15px;
+  }
+
+  &__text{
+    color: #878787;
+    font-size: 14px;
+  }
 }
 
-.main_news{
+
+.main_news {
   width: 1000px;
   margin: auto;
 }
 
-.main__text{
-  width: 1000px;
-  margin: auto;
-  color: #878787;
-  font-size: 14px;
-}
 
-.news{
+
+.news {
   height: 100px;
   overflow: hidden;
   border-bottom: 1px solid #eeeeee;
   position: relative;
+  margin-bottom: 25px;
 
-  &__pic{
+  &:hover &__link{
+    background-color: #000000;
+  }
+
+  &__pic {
+    .transform-block(26deg, 1);
     float: left;
     height: 100px;
     width: @triple-block;
     overflow: hidden;
-    .transform-block(26deg, 1);
     margin: 0 60px 0 -25px;
 
-    img{
+    img {
       width: 101%;
-      transform: scale(1) skewX(-26deg);
+      .transform-block(-26deg, 1);
     }
   }
 
-  &__link{
+  &__link {
+    .transform-block(26deg);
+    .transaction-block;
     display: block;
     width: 35px;
     height: 100%;
-    .transform-block(26deg);
     background-color: @bright-color;
     position: absolute;
     top: 0;
     right: 25px;
   }
 
-  &__info{
+  &__info {
     margin-right: 115px;
+    max-height: 85px;
+    overflow: hidden;
   }
+
+  &__title{
+    color: #666666;
+    font-family: @roboto-extend;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__text{
+    font-size: 13px;
+    font-weight: 300;
+    color: #858585;
+    line-height: 18px;
+  }
+
 }

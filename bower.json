@@ -1,0 +1,9 @@
+{
+  "name": "Cars project",
+  "version": "1.0.0",
+  "dependencies": {
+    "less": "~2.5.1",
+    "jquery": "~2.1.4",
+    "font-awesome": "fontawesome#~4.4.0"
+  }
+}
